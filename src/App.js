@@ -1,11 +1,30 @@
 import React from 'react';
-import { Counter } from './features/counter/Counter';
+// import { Counter } from './features/counter/Counter';
 import './App.css';
-
-function App() {
+import Header from './components/Header';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useParams
+} from "react-router-dom";
+const App = () => {
   return (
     <div className="app">
-      <h1>SLACK CLONE</h1>
+      
+      <Router>
+      <>
+       
+
+      
+        <Switch>
+          <Route path="/">
+          <Header/>
+          </Route>
+        </Switch>
+      </>
+    </Router>
     </div>
   );
 }
