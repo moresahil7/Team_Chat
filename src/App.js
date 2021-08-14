@@ -4,6 +4,7 @@ import "./App.css";
 import styled from "styled-components";
 import Header from "./components/Header";
 import SideBar from "./components/SideBar";
+import Chat from "./components/Chat";
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,7 +22,7 @@ const App = () => {
             <SideBar/>
             <Switch>
               <Route path="/" exact>
-                {/*Chat*/}
+                <Chat/>
               </Route>
             </Switch>
           </AppBody>
