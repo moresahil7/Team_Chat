@@ -15,11 +15,13 @@ import { Add,
     PeopleAlt } from '@material-ui/icons'
 import SideBarOptions from './SideBarOptions'
 import { useCollection } from 'react-firebase-hooks/firestore';
-import { db } from '../firebase';
+import { auth, db } from '../firebase';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 
 
 const SideBar = () => {
+    const[user] = useAuthState(auth)
     const [channels, loading , error] = useCollection(db.collection('rooms'))
 
     return (
@@ -29,7 +31,8 @@ const SideBar = () => {
                     <h2>Team Chat HQ</h2>
                     <h4>
                     <FiberManualRecord/>
-                        Sahil More
+                    {user?.displayName}
+
                     </h4>
                 </SideBarInfo>
                 <Create/>
@@ -72,6 +75,8 @@ const SideBarContainer = styled.div`
     max-width: 250px;
     margin-top: 60px;
     background-color: var(--chat-color);
+    position: relative;
+    height: fit-content;
 
     >hr {
         margin-top: 10px;

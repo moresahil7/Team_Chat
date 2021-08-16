@@ -3,14 +3,23 @@ import styled from "styled-components";
 import { Avatar } from "@material-ui/core";
 import { AccessTime, HelpOutline } from "@material-ui/icons";
 import { Search } from "@material-ui/icons";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../firebase";
 
 const Header = () => {
+  const[user] = useAuthState(auth)
+
+console.log('user is', user);
+
+
   return (
     <HeaderContainer>
       {/*Header Left */}
       <HeaderLeft>
-        <HeaderAvatar
-        //TODO: add pon click
+        <HeaderAvatar 
+        onClick={() => auth.signOut()} 
+        alt={user?.displayName}
+        src={user?.photoURL}
         />
         <AccessTime />
       </HeaderLeft>
@@ -65,6 +74,7 @@ const HeaderRight = styled.div`
 
 const HeaderAvatar = styled(Avatar)`
   cursor: pointer;
+  margin-left: 5px;
 
   :hover {
     opacity: 0.8;
