@@ -12,7 +12,7 @@ Demo📷
 
 ![image](https://user-images.githubusercontent.com/82169025/129695969-1b339d54-e7c2-4d97-a2f1-81bdcd6e3353.png)
 
-<h3>The actual application is here after yo have logged in.</h3>
+<h3>The actual application is here after you have logged in.</h3>
 
 ![image](https://user-images.githubusercontent.com/82169025/129696153-e552b39d-9c45-487d-8f51-354aaa2ca5e2.png)
 
@@ -20,4 +20,12 @@ Demo📷
 <p>Here Channel Test 2 is selected</p>
 
 ![image](https://user-images.githubusercontent.com/82169025/129696483-b9094eeb-5e8e-42f0-bca6-5320b9899b43.png)
+
+<h3>You can Logout by clicking on you Profile Photo</h3>
+<h3>Technologies Used</h3>
+<ul>
+  <li>	![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)</li>
+  <li>Redux</li>
+  <li>Firebase/Firestore Database🔥🔥</li>
+ </ul>
 
