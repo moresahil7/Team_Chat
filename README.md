@@ -24,7 +24,11 @@ Demo📷
 <h3>You can Logout by clicking on you Profile Photo</h3>
 <h3>Technologies Used</h3>
 <ul>
-  <li>	![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)</li>
+  <li>	
+    
+    ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+    
+  </li>
   <li>Redux</li>
   <li>Firebase/Firestore Database🔥🔥</li>
  </ul>
